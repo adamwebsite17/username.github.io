@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        header {
+            background-color: #001f33;
+            color: #00aaff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: #00aaff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        h2 {
+            color: #00aaff;
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .services {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service {
+            flex: 1 1 calc(30% - 20px);
+            padding: 20px;
+            height: 300px; /* Adjusted height to accommodate images */
+            background: #333;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+        .service img {
+            max-width: 100%; /* Responsive image */
+            height: auto;
+            border-radius: 10px 10px 0 0; /* Rounded corners for the top */
+        }
+        .service:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #001f33;
+            color: #00aaff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Pro Web</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Our Services</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+</header>
+
+<section id="home">
+    <h2>Welcome to Pro Web</h2>
+    <p>Your partner in creating stunning and effective websites.</p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service">
+            <img src="normal-site.jpg" alt="Normal Site">
+            <h3>Normal Site</h3>
+            <p>We create standard websites that meet your business needs.</p>
+        </div>
+        <div class="service">
+            <img src="gold-site.jpg" alt="Gold Site">
+            <h3>Gold Site</h3>
+            <p>Premium websites with advanced features and support.</p>
+        </div>
+        <div class="service">
+            <img src="premium-site.jpg" alt="Premium Site">
+            <h3>Premium Site</h3>
+            <p>High-end websites with customized solutions and exceptional performance.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feel free to reach out to us at:</p>
+    <p>Email: <a href="mailto:proweb@gmail.com" style="color: #00aaff;">proweb@gmail.com</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Pro Web. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
